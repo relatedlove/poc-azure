@@ -1,0 +1,16 @@
+{
+	"name": "SourceDataset_kf3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "central9_test",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`profile`"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

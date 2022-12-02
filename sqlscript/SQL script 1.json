@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "-- Create a Master Key\n   CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'gbdi@20225261';\n\n   /*\n   * Specify credentials to external data source\n   * IDENTITY: user name for external source.\n   * SECRET: password for external source.\n   */\n   CREATE DATABASE SCOPED CREDENTIAL credential_name\n   WITH IDENTITY = 'jira_view01', Secret = 'B@nk52615261'",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

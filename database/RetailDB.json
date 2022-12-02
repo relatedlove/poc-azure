@@ -1,0 +1,25 @@
+{
+	"name": "RetailDB",
+	"properties": {
+		"Name": "RetailDB",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://data@lakegbdi.dfs.core.windows.net/RetailDB",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "workspace-gbdi-synapse-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "d9889bce-c312-4a40-8298-80048a89a80a"
+	},
+	"type": "DATABASE"
+}
